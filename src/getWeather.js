@@ -1,5 +1,4 @@
 function returnWeather() {
-  return "10 degrees celcius down under";
+  return "10 degrees celcius";
 }
-
 export default returnWeather;
