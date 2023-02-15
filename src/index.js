@@ -1,4 +1,3 @@
-import getWeather from "./getWeather";
-import "./styles/main.css";
-console.log(getWeather());
-console.log(1);
+const hello = () => {
+  console.log("hello");
+};
