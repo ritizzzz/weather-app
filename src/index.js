@@ -1,3 +1,1 @@
-const hello = () => {
-  console.log("hello");
-};
+import "./styles/main.css";
