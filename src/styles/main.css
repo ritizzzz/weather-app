@@ -91,6 +91,7 @@ video {
   font: inherit;
   vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
 article,
 aside,
@@ -105,17 +106,21 @@ nav,
 section {
   display: block;
 }
+
 body {
   line-height: 1;
 }
+
 ol,
 ul {
   list-style: none;
 }
+
 blockquote,
 q {
   quotes: none;
 }
+
 blockquote:before,
 blockquote:after,
 q:before,
@@ -123,6 +128,7 @@ q:after {
   content: "";
   content: none;
 }
+
 table {
   border-collapse: collapse;
   border-spacing: 0;
@@ -134,26 +140,65 @@ table {
   box-sizing: border-box;
 }
 
-.mainImage {
-  width: 100%;
-  height: 400px;
-  object-fit: cover;
-}
 
 .mainImageContainer {
   position: relative;
+  height: 400px;
 }
 
-.weatherInfo {
+.mainImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.overlayMainImage {
   position: absolute;
   width: 100%;
   height: 100%;
   background-color: rgb(0, 0, 0, 0.4);
   bottom: 0px;
+
 }
 
-.weatherInfo h1 {
+
+.header {
+  padding: 10px;
+  position: absolute;
+  display: grid;
+  grid-template-columns: 50px 100% 1fr;
+  top: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+
+
+.header>div {
+  display: flex;
+  align-items: center;
   font-size: 1.5rem;
   color: white;
-  padding: 10px;
+  gap: 5px;
+}
+
+.weatherInfo {
+  position: absolute;
+  bottom: 100px;
+  z-index: 2;
+  color: white;
+}
+
+.weatherInfo>.icon {
+  filter: invert(99%) sepia(100%) saturate(0%) hue-rotate(254deg) brightness(102%) contrast(105%);
+}
+
+
+
+.icon {
+  width: 50px;
+  height: 50px;
 }
