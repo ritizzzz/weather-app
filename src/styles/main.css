@@ -157,7 +157,7 @@ table {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: rgb(0, 0, 0, 0.4);
+  background-color: rgb(0, 0, 0, 0.6);
   bottom: 0px;
 
 }
@@ -187,14 +187,14 @@ table {
 
 .weatherInfo {
   position: absolute;
-  bottom: 20px;
+  bottom: 10px;
   z-index: 2;
   color: white;
   display: grid;
   width: 100%;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 20px 20px 50px 1fr;
-  padding: 10px;
+  grid-template-rows: 20px 20px 50px 20px 20px;
+  padding: 0px 15px;
 }
 
 .weatherInfo h1 {
@@ -202,8 +202,27 @@ table {
 }
 
 .weatherInfo h3 {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
+
+.leftWeatherInfo {
+  display: flex;
+  grid-area: 3/1/6/2;
+  align-items: center;
+  gap: 10px;
+}
+
+.rightWeatherInfo {
+  grid-area: 3/2/6/3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2px;
+
+}
+
+
+
 
 .city {
   grid-area: 1/1/3/3;
@@ -213,25 +232,18 @@ table {
   grid-area: 2/1/3/3;
 }
 
-.weatherDescription {
-  grid-area: 4/1/5/2;
-}
-
-.temp,
+.weatherDescription,
+.highLow,
 .feelsLike {
   justify-self: end;
-  align-self: center;
+  align-self: flex-end;
 }
 
-.temp,
-.icon {
-  margin-top: 10px;
-  align-self: center;
-}
-
-
-.weatherInfo>.icon {
+.leftWeatherInfo>.icon {
   filter: invert(99%) sepia(100%) saturate(0%) hue-rotate(254deg) brightness(102%) contrast(105%);
+  width: 60px;
+  height: 60px;
+
 }
 
 

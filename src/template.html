@@ -28,11 +28,16 @@
       <h3 class="city">Melbourne</h1>
         <h3 class="date">Tuesday 21st of February</h3>
 
-        <img class="icon" src="<%= require('./assets/icons/cloud.svg') %>" alt="weather type">
-        <h1 class="weatherDescription">Cloudy</h1>
+        <div class="leftWeatherInfo">
+          <img class="icon" src="<%= require('./assets/icons/cloud.svg') %>" alt="weather type">
+          <h1 class="temp">23°C</h1>
+        </div>
 
-        <h1 class="temp">23°C</h1>
-        <h3 class="feelsLike">Feels like 22°C</h3>
+        <div class="rightWeatherInfo">
+          <h3 class="weatherDescription">Cloudy</h1>
+            <h3 class="highLow">18°C/23°C</h3>
+            <h3 class="feelsLike">Feels like 22°C</h3>
+        </div>
     </div>
 
   </div>
