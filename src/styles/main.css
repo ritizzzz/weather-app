@@ -248,59 +248,18 @@ table {
 
 }
 
-.threeHourInfo .icon {
-  filter: invert(99%) sepia(100%) saturate(0%) hue-rotate(254deg) brightness(102%) contrast(105%);
-  width: 30px;
-  height: 30px;
-}
-
-.module h3 {
-  font-size: 0.8rem;
-
-}
 
 
-
-
-.threeHourInfo {
-  width: 98%;
-  gap: 20px;
-  overflow-x: scroll;
-  padding: 10px;
-  color: white;
-  display: flex;
-  background-color: black;
-  margin: auto;
-  margin-top: 10px;
-  border-radius: 10px;
-}
-
-
-.threeHourInfo::-webkit-scrollbar {
-  height: 10px;
-}
-
-.threeHourInfo::-webkit-scrollbar-track {
+::-webkit-scrollbar-track {
   background: black;
   border-radius: 10px;
 }
 
-.threeHourInfo::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb {
   background-color: #dc2626;
   border-radius: 10px;
-  border: 3px solid black;
+  border: 7px solid black;
 }
-
-
-
-.module {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-  align-items: center;
-  min-width: 70px;
-}
-
 
 .icon {
   width: 50px;
