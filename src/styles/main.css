@@ -265,13 +265,15 @@ body {
 
 .toggleNav:hover {
   cursor: pointer;
+  filter: invert(18%) sepia(0%) saturate(1062%) hue-rotate(136deg) brightness(91%) contrast(93%);
+
 }
 
 nav {
   position: absolute;
   top: 0;
   color: white;
-  background-color: black;
+  background-color: rgb(38, 38, 38);
   right: -100%;
   width: 100vw;
   height: 100vh;
