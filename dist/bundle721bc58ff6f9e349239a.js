@@ -16,12 +16,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 /* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/getUrl.js */ "./node_modules/css-loader/dist/runtime/getUrl.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__);
 // Imports
 
 
+
+var ___CSS_LOADER_URL_IMPORT_0___ = new URL(/* asset import */ __webpack_require__(/*! ../assets/icons/magnify.svg */ "./src/assets/icons/magnify.svg"), __webpack_require__.b);
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
+var ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_0___);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "/* http://meyerweb.com/eric/tools/css/reset/ \n   v2.0 | 20110126\n   License: none (public domain)\n*/\n\nhtml,\nbody,\ndiv,\nspan,\napplet,\nobject,\niframe,\nh1,\nh2,\nh3,\nh4,\nh5,\nh6,\np,\nblockquote,\npre,\na,\nabbr,\nacronym,\naddress,\nbig,\ncite,\ncode,\ndel,\ndfn,\nem,\nimg,\nins,\nkbd,\nq,\ns,\nsamp,\nsmall,\nstrike,\nstrong,\nsub,\nsup,\ntt,\nvar,\nb,\nu,\ni,\ncenter,\ndl,\ndt,\ndd,\nol,\nul,\nli,\nfieldset,\nform,\nlabel,\nlegend,\ntable,\ncaption,\ntbody,\ntfoot,\nthead,\ntr,\nth,\ntd,\narticle,\naside,\ncanvas,\ndetails,\nembed,\nfigure,\nfigcaption,\nfooter,\nheader,\nhgroup,\nmenu,\nnav,\noutput,\nruby,\nsection,\nsummary,\ntime,\nmark,\naudio,\nvideo {\n  margin: 0;\n  padding: 0;\n  border: 0;\n  font-size: 100%;\n  font: inherit;\n  vertical-align: baseline;\n}\n\n/* HTML5 display-role reset for older browsers */\narticle,\naside,\ndetails,\nfigcaption,\nfigure,\nfooter,\nheader,\nhgroup,\nmenu,\nnav,\nsection {\n  display: block;\n}\n\nbody {\n  line-height: 1;\n}\n\nol,\nul {\n  list-style: none;\n}\n\nblockquote,\nq {\n  quotes: none;\n}\n\nblockquote:before,\nblockquote:after,\nq:before,\nq:after {\n  content: \"\";\n  content: none;\n}\n\ntable {\n  border-collapse: collapse;\n  border-spacing: 0;\n}\n\n* {\n  margin: 0px;\n  padding: 0px;\n  box-sizing: border-box;\n}\n\n\n\n.mainImageContainer {\n  position: relative;\n  height: 100vhf;\n}\n\n.mainImage {\n  width: 100%;\n  height: 100%;\n  position: absolute;\n  object-fit: cover;\n}\n\n\n.overlayMainImage {\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  background-color: rgb(0, 0, 0, 0.6);\n  bottom: 0px;\n\n}\n\n\n.header {\n  padding: 10px;\n  position: absolute;\n  display: grid;\n  grid-template-columns: 50px 100% 1fr;\n  top: 0px;\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  width: 100%;\n}\n\n\n\n.header>div {\n  display: flex;\n  align-items: center;\n  font-size: 1.5rem;\n  color: white;\n  gap: 5px;\n}\n\n.weatherInfo {\n  position: absolute;\n  bottom: 10px;\n  color: white;\n  display: grid;\n  width: 100%;\n  grid-template-columns: 1fr 1fr;\n  grid-template-rows: 20px 20px 50px 20px 20px;\n  padding: 0px 15px;\n}\n\n.weatherInfo h1 {\n  font-size: 2rem;\n}\n\n.weatherInfo h3 {\n  font-size: 1.1rem;\n}\n\n.leftWeatherInfo {\n  display: flex;\n  grid-area: 3/1/6/2;\n  align-items: center;\n  gap: 10px;\n}\n\n.rightWeatherInfo {\n  grid-area: 3/2/6/3;\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  gap: 2px;\n\n}\n\n\n\n\n.city {\n  grid-area: 1/1/3/3;\n}\n\n.date {\n  grid-area: 2/1/3/3;\n}\n\n.weatherDescription,\n.highLow,\n.feelsLike {\n  justify-self: end;\n  align-self: flex-end;\n}\n\n.leftWeatherInfo>.icon {\n  filter: invert(99%) sepia(100%) saturate(0%) hue-rotate(254deg) brightness(102%) contrast(105%);\n  width: 60px;\n  height: 60px;\n\n}\n\n\n\n\n.icon {\n  width: 50px;\n  height: 50px;\n}", "",{"version":3,"sources":["webpack://./src/styles/main.css"],"names":[],"mappings":"AAAA;;;CAGC;;AAED;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;EAiFE,SAAS;EACT,UAAU;EACV,SAAS;EACT,eAAe;EACf,aAAa;EACb,wBAAwB;AAC1B;;AAEA,gDAAgD;AAChD;;;;;;;;;;;EAWE,cAAc;AAChB;;AAEA;EACE,cAAc;AAChB;;AAEA;;EAEE,gBAAgB;AAClB;;AAEA;;EAEE,YAAY;AACd;;AAEA;;;;EAIE,WAAW;EACX,aAAa;AACf;;AAEA;EACE,yBAAyB;EACzB,iBAAiB;AACnB;;AAEA;EACE,WAAW;EACX,YAAY;EACZ,sBAAsB;AACxB;;;;AAIA;EACE,kBAAkB;EAClB,cAAc;AAChB;;AAEA;EACE,WAAW;EACX,YAAY;EACZ,kBAAkB;EAClB,iBAAiB;AACnB;;;AAGA;EACE,kBAAkB;EAClB,WAAW;EACX,YAAY;EACZ,mCAAmC;EACnC,WAAW;;AAEb;;;AAGA;EACE,aAAa;EACb,kBAAkB;EAClB,aAAa;EACb,oCAAoC;EACpC,QAAQ;EACR,aAAa;EACb,mBAAmB;EACnB,8BAA8B;EAC9B,WAAW;AACb;;;;AAIA;EACE,aAAa;EACb,mBAAmB;EACnB,iBAAiB;EACjB,YAAY;EACZ,QAAQ;AACV;;AAEA;EACE,kBAAkB;EAClB,YAAY;EACZ,YAAY;EACZ,aAAa;EACb,WAAW;EACX,8BAA8B;EAC9B,4CAA4C;EAC5C,iBAAiB;AACnB;;AAEA;EACE,eAAe;AACjB;;AAEA;EACE,iBAAiB;AACnB;;AAEA;EACE,aAAa;EACb,kBAAkB;EAClB,mBAAmB;EACnB,SAAS;AACX;;AAEA;EACE,kBAAkB;EAClB,aAAa;EACb,sBAAsB;EACtB,uBAAuB;EACvB,QAAQ;;AAEV;;;;;AAKA;EACE,kBAAkB;AACpB;;AAEA;EACE,kBAAkB;AACpB;;AAEA;;;EAGE,iBAAiB;EACjB,oBAAoB;AACtB;;AAEA;EACE,+FAA+F;EAC/F,WAAW;EACX,YAAY;;AAEd;;;;;AAKA;EACE,WAAW;EACX,YAAY;AACd","sourcesContent":["/* http://meyerweb.com/eric/tools/css/reset/ \n   v2.0 | 20110126\n   License: none (public domain)\n*/\n\nhtml,\nbody,\ndiv,\nspan,\napplet,\nobject,\niframe,\nh1,\nh2,\nh3,\nh4,\nh5,\nh6,\np,\nblockquote,\npre,\na,\nabbr,\nacronym,\naddress,\nbig,\ncite,\ncode,\ndel,\ndfn,\nem,\nimg,\nins,\nkbd,\nq,\ns,\nsamp,\nsmall,\nstrike,\nstrong,\nsub,\nsup,\ntt,\nvar,\nb,\nu,\ni,\ncenter,\ndl,\ndt,\ndd,\nol,\nul,\nli,\nfieldset,\nform,\nlabel,\nlegend,\ntable,\ncaption,\ntbody,\ntfoot,\nthead,\ntr,\nth,\ntd,\narticle,\naside,\ncanvas,\ndetails,\nembed,\nfigure,\nfigcaption,\nfooter,\nheader,\nhgroup,\nmenu,\nnav,\noutput,\nruby,\nsection,\nsummary,\ntime,\nmark,\naudio,\nvideo {\n  margin: 0;\n  padding: 0;\n  border: 0;\n  font-size: 100%;\n  font: inherit;\n  vertical-align: baseline;\n}\n\n/* HTML5 display-role reset for older browsers */\narticle,\naside,\ndetails,\nfigcaption,\nfigure,\nfooter,\nheader,\nhgroup,\nmenu,\nnav,\nsection {\n  display: block;\n}\n\nbody {\n  line-height: 1;\n}\n\nol,\nul {\n  list-style: none;\n}\n\nblockquote,\nq {\n  quotes: none;\n}\n\nblockquote:before,\nblockquote:after,\nq:before,\nq:after {\n  content: \"\";\n  content: none;\n}\n\ntable {\n  border-collapse: collapse;\n  border-spacing: 0;\n}\n\n* {\n  margin: 0px;\n  padding: 0px;\n  box-sizing: border-box;\n}\n\n\n\n.mainImageContainer {\n  position: relative;\n  height: 100vhf;\n}\n\n.mainImage {\n  width: 100%;\n  height: 100%;\n  position: absolute;\n  object-fit: cover;\n}\n\n\n.overlayMainImage {\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  background-color: rgb(0, 0, 0, 0.6);\n  bottom: 0px;\n\n}\n\n\n.header {\n  padding: 10px;\n  position: absolute;\n  display: grid;\n  grid-template-columns: 50px 100% 1fr;\n  top: 0px;\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  width: 100%;\n}\n\n\n\n.header>div {\n  display: flex;\n  align-items: center;\n  font-size: 1.5rem;\n  color: white;\n  gap: 5px;\n}\n\n.weatherInfo {\n  position: absolute;\n  bottom: 10px;\n  color: white;\n  display: grid;\n  width: 100%;\n  grid-template-columns: 1fr 1fr;\n  grid-template-rows: 20px 20px 50px 20px 20px;\n  padding: 0px 15px;\n}\n\n.weatherInfo h1 {\n  font-size: 2rem;\n}\n\n.weatherInfo h3 {\n  font-size: 1.1rem;\n}\n\n.leftWeatherInfo {\n  display: flex;\n  grid-area: 3/1/6/2;\n  align-items: center;\n  gap: 10px;\n}\n\n.rightWeatherInfo {\n  grid-area: 3/2/6/3;\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  gap: 2px;\n\n}\n\n\n\n\n.city {\n  grid-area: 1/1/3/3;\n}\n\n.date {\n  grid-area: 2/1/3/3;\n}\n\n.weatherDescription,\n.highLow,\n.feelsLike {\n  justify-self: end;\n  align-self: flex-end;\n}\n\n.leftWeatherInfo>.icon {\n  filter: invert(99%) sepia(100%) saturate(0%) hue-rotate(254deg) brightness(102%) contrast(105%);\n  width: 60px;\n  height: 60px;\n\n}\n\n\n\n\n.icon {\n  width: 50px;\n  height: 50px;\n}"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, "/* http://meyerweb.com/eric/tools/css/reset/ \n   v2.0 | 20110126\n   License: none (public domain)\n*/\n\nhtml,\nbody,\ndiv,\nspan,\napplet,\nobject,\niframe,\nh1,\nh2,\nh3,\nh4,\nh5,\nh6,\np,\nblockquote,\npre,\na,\nabbr,\nacronym,\naddress,\nbig,\ncite,\ncode,\ndel,\ndfn,\nem,\nimg,\nins,\nkbd,\nq,\ns,\nsamp,\nsmall,\nstrike,\nstrong,\nsub,\nsup,\ntt,\nvar,\nb,\nu,\ni,\ncenter,\ndl,\ndt,\ndd,\nol,\nul,\nli,\nfieldset,\nform,\nlabel,\nlegend,\ntable,\ncaption,\ntbody,\ntfoot,\nthead,\ntr,\nth,\ntd,\narticle,\naside,\ncanvas,\ndetails,\nembed,\nfigure,\nfigcaption,\nfooter,\nheader,\nhgroup,\nmenu,\nnav,\noutput,\nruby,\nsection,\nsummary,\ntime,\nmark,\naudio,\nvideo {\n  margin: 0;\n  padding: 0;\n  border: 0;\n  font-size: 100%;\n  font: inherit;\n  vertical-align: baseline;\n}\n\n/* HTML5 display-role reset for older browsers */\narticle,\naside,\ndetails,\nfigcaption,\nfigure,\nfooter,\nheader,\nhgroup,\nmenu,\nnav,\nsection {\n  display: block;\n}\n\nbody {\n  line-height: 1;\n}\n\nol,\nul {\n  list-style: none;\n}\n\nblockquote,\nq {\n  quotes: none;\n}\n\nblockquote:before,\nblockquote:after,\nq:before,\nq:after {\n  content: \"\";\n  content: none;\n}\n\ntable {\n  border-collapse: collapse;\n  border-spacing: 0;\n}\n\n* {\n  margin: 0px;\n  padding: 0px;\n  box-sizing: border-box;\n}\n\nbody {\n  overflow-x: hidden;\n}\n\n.mainImageContainer {\n  position: relative;\n  height: 100vh;\n}\n\n.mainImage {\n  width: 100%;\n  height: 100%;\n  position: absolute;\n  object-fit: cover;\n}\n\n\n.overlayMainImage {\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  background-color: rgb(0, 0, 0, 0.6);\n  bottom: 0px;\n\n}\n\n\n.header {\n  padding: 10px;\n  position: absolute;\n  display: grid;\n  grid-template-columns: 50px 100% 1fr;\n  top: 0px;\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  width: 100%;\n}\n\n\n\n.header>div {\n  display: flex;\n  align-items: center;\n  font-size: 1.5rem;\n  color: white;\n  gap: 5px;\n}\n\n.weatherInfo {\n  position: absolute;\n  bottom: 10px;\n  color: white;\n  display: grid;\n  width: 100%;\n  grid-template-columns: 1fr 1fr;\n  grid-template-rows: 20px 20px 50px 20px 20px;\n  padding: 0px 15px;\n}\n\n.weatherInfo h1 {\n  font-size: 2rem;\n}\n\n.weatherInfo h3 {\n  font-size: 1.1rem;\n}\n\n.leftWeatherInfo {\n  display: flex;\n  grid-area: 3/1/6/2;\n  align-items: center;\n  gap: 10px;\n}\n\n.rightWeatherInfo {\n  grid-area: 3/2/6/3;\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  gap: 2px;\n\n}\n\n\n\n\n.city {\n  grid-area: 1/1/3/3;\n}\n\n.date {\n  grid-area: 2/1/3/3;\n}\n\n.weatherDescription,\n.highLow,\n.feelsLike {\n  justify-self: end;\n  align-self: flex-end;\n}\n\n.leftWeatherInfo>.icon {\n  width: 60px;\n  filter: invert(99%) sepia(100%) saturate(0%) hue-rotate(254deg) brightness(102%) contrast(105%);\n  height: 60px;\n}\n\n\n\n\n.icon {\n  width: 50px;\n  height: 50px;\n}\n\n.toggleNav {\n  transition: 0.3s;\n  z-index: 1;\n  position: sticky;\n}\n\n.toggleNav:hover {\n  cursor: pointer;\n  filter: invert(18%) sepia(0%) saturate(1062%) hue-rotate(136deg) brightness(91%) contrast(93%);\n\n}\n\nnav {\n  position: absolute;\n  top: 0;\n  color: white;\n  background-color: rgb(38, 38, 38);\n  right: -100%;\n  width: 100vw;\n  height: 100vh;\n  transition: 0.3s;\n  padding: 50px 20px;\n}\n\n.search {\n  outline: none;\n  border: none;\n  padding: 10px;\n  background-color: rgb(38, 38, 38);\n  border-bottom: 2px white solid;\n  color: white;\n\n}\n\n.searchButton {\n  background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ");\n  object-fit: cover;\n  width: 30px;\n  height: 30px;\n  border: none;\n  background-color: rgb(38, 38, 38);\n}\n\n.searchButton:hover {\n  cursor: pointer;\n}\n\n.searchContainer {\n  display: flex;\n  align-items: center;\n  width: 100%;\n  justify-content: space-between;\n  margin-top: 20px;\n}\n\n\nnav .icon {\n  filter: invert(99%) sepia(100%) saturate(0%) hue-rotate(254deg) brightness(102%) contrast(105%);\n}", "",{"version":3,"sources":["webpack://./src/styles/main.css"],"names":[],"mappings":"AAAA;;;CAGC;;AAED;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;EAiFE,SAAS;EACT,UAAU;EACV,SAAS;EACT,eAAe;EACf,aAAa;EACb,wBAAwB;AAC1B;;AAEA,gDAAgD;AAChD;;;;;;;;;;;EAWE,cAAc;AAChB;;AAEA;EACE,cAAc;AAChB;;AAEA;;EAEE,gBAAgB;AAClB;;AAEA;;EAEE,YAAY;AACd;;AAEA;;;;EAIE,WAAW;EACX,aAAa;AACf;;AAEA;EACE,yBAAyB;EACzB,iBAAiB;AACnB;;AAEA;EACE,WAAW;EACX,YAAY;EACZ,sBAAsB;AACxB;;AAEA;EACE,kBAAkB;AACpB;;AAEA;EACE,kBAAkB;EAClB,aAAa;AACf;;AAEA;EACE,WAAW;EACX,YAAY;EACZ,kBAAkB;EAClB,iBAAiB;AACnB;;;AAGA;EACE,kBAAkB;EAClB,WAAW;EACX,YAAY;EACZ,mCAAmC;EACnC,WAAW;;AAEb;;;AAGA;EACE,aAAa;EACb,kBAAkB;EAClB,aAAa;EACb,oCAAoC;EACpC,QAAQ;EACR,aAAa;EACb,mBAAmB;EACnB,8BAA8B;EAC9B,WAAW;AACb;;;;AAIA;EACE,aAAa;EACb,mBAAmB;EACnB,iBAAiB;EACjB,YAAY;EACZ,QAAQ;AACV;;AAEA;EACE,kBAAkB;EAClB,YAAY;EACZ,YAAY;EACZ,aAAa;EACb,WAAW;EACX,8BAA8B;EAC9B,4CAA4C;EAC5C,iBAAiB;AACnB;;AAEA;EACE,eAAe;AACjB;;AAEA;EACE,iBAAiB;AACnB;;AAEA;EACE,aAAa;EACb,kBAAkB;EAClB,mBAAmB;EACnB,SAAS;AACX;;AAEA;EACE,kBAAkB;EAClB,aAAa;EACb,sBAAsB;EACtB,uBAAuB;EACvB,QAAQ;;AAEV;;;;;AAKA;EACE,kBAAkB;AACpB;;AAEA;EACE,kBAAkB;AACpB;;AAEA;;;EAGE,iBAAiB;EACjB,oBAAoB;AACtB;;AAEA;EACE,WAAW;EACX,+FAA+F;EAC/F,YAAY;AACd;;;;;AAKA;EACE,WAAW;EACX,YAAY;AACd;;AAEA;EACE,gBAAgB;EAChB,UAAU;EACV,gBAAgB;AAClB;;AAEA;EACE,eAAe;EACf,8FAA8F;;AAEhG;;AAEA;EACE,kBAAkB;EAClB,MAAM;EACN,YAAY;EACZ,iCAAiC;EACjC,YAAY;EACZ,YAAY;EACZ,aAAa;EACb,gBAAgB;EAChB,kBAAkB;AACpB;;AAEA;EACE,aAAa;EACb,YAAY;EACZ,aAAa;EACb,iCAAiC;EACjC,8BAA8B;EAC9B,YAAY;;AAEd;;AAEA;EACE,yDAAkD;EAClD,iBAAiB;EACjB,WAAW;EACX,YAAY;EACZ,YAAY;EACZ,iCAAiC;AACnC;;AAEA;EACE,eAAe;AACjB;;AAEA;EACE,aAAa;EACb,mBAAmB;EACnB,WAAW;EACX,8BAA8B;EAC9B,gBAAgB;AAClB;;;AAGA;EACE,+FAA+F;AACjG","sourcesContent":["/* http://meyerweb.com/eric/tools/css/reset/ \n   v2.0 | 20110126\n   License: none (public domain)\n*/\n\nhtml,\nbody,\ndiv,\nspan,\napplet,\nobject,\niframe,\nh1,\nh2,\nh3,\nh4,\nh5,\nh6,\np,\nblockquote,\npre,\na,\nabbr,\nacronym,\naddress,\nbig,\ncite,\ncode,\ndel,\ndfn,\nem,\nimg,\nins,\nkbd,\nq,\ns,\nsamp,\nsmall,\nstrike,\nstrong,\nsub,\nsup,\ntt,\nvar,\nb,\nu,\ni,\ncenter,\ndl,\ndt,\ndd,\nol,\nul,\nli,\nfieldset,\nform,\nlabel,\nlegend,\ntable,\ncaption,\ntbody,\ntfoot,\nthead,\ntr,\nth,\ntd,\narticle,\naside,\ncanvas,\ndetails,\nembed,\nfigure,\nfigcaption,\nfooter,\nheader,\nhgroup,\nmenu,\nnav,\noutput,\nruby,\nsection,\nsummary,\ntime,\nmark,\naudio,\nvideo {\n  margin: 0;\n  padding: 0;\n  border: 0;\n  font-size: 100%;\n  font: inherit;\n  vertical-align: baseline;\n}\n\n/* HTML5 display-role reset for older browsers */\narticle,\naside,\ndetails,\nfigcaption,\nfigure,\nfooter,\nheader,\nhgroup,\nmenu,\nnav,\nsection {\n  display: block;\n}\n\nbody {\n  line-height: 1;\n}\n\nol,\nul {\n  list-style: none;\n}\n\nblockquote,\nq {\n  quotes: none;\n}\n\nblockquote:before,\nblockquote:after,\nq:before,\nq:after {\n  content: \"\";\n  content: none;\n}\n\ntable {\n  border-collapse: collapse;\n  border-spacing: 0;\n}\n\n* {\n  margin: 0px;\n  padding: 0px;\n  box-sizing: border-box;\n}\n\nbody {\n  overflow-x: hidden;\n}\n\n.mainImageContainer {\n  position: relative;\n  height: 100vh;\n}\n\n.mainImage {\n  width: 100%;\n  height: 100%;\n  position: absolute;\n  object-fit: cover;\n}\n\n\n.overlayMainImage {\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  background-color: rgb(0, 0, 0, 0.6);\n  bottom: 0px;\n\n}\n\n\n.header {\n  padding: 10px;\n  position: absolute;\n  display: grid;\n  grid-template-columns: 50px 100% 1fr;\n  top: 0px;\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  width: 100%;\n}\n\n\n\n.header>div {\n  display: flex;\n  align-items: center;\n  font-size: 1.5rem;\n  color: white;\n  gap: 5px;\n}\n\n.weatherInfo {\n  position: absolute;\n  bottom: 10px;\n  color: white;\n  display: grid;\n  width: 100%;\n  grid-template-columns: 1fr 1fr;\n  grid-template-rows: 20px 20px 50px 20px 20px;\n  padding: 0px 15px;\n}\n\n.weatherInfo h1 {\n  font-size: 2rem;\n}\n\n.weatherInfo h3 {\n  font-size: 1.1rem;\n}\n\n.leftWeatherInfo {\n  display: flex;\n  grid-area: 3/1/6/2;\n  align-items: center;\n  gap: 10px;\n}\n\n.rightWeatherInfo {\n  grid-area: 3/2/6/3;\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  gap: 2px;\n\n}\n\n\n\n\n.city {\n  grid-area: 1/1/3/3;\n}\n\n.date {\n  grid-area: 2/1/3/3;\n}\n\n.weatherDescription,\n.highLow,\n.feelsLike {\n  justify-self: end;\n  align-self: flex-end;\n}\n\n.leftWeatherInfo>.icon {\n  width: 60px;\n  filter: invert(99%) sepia(100%) saturate(0%) hue-rotate(254deg) brightness(102%) contrast(105%);\n  height: 60px;\n}\n\n\n\n\n.icon {\n  width: 50px;\n  height: 50px;\n}\n\n.toggleNav {\n  transition: 0.3s;\n  z-index: 1;\n  position: sticky;\n}\n\n.toggleNav:hover {\n  cursor: pointer;\n  filter: invert(18%) sepia(0%) saturate(1062%) hue-rotate(136deg) brightness(91%) contrast(93%);\n\n}\n\nnav {\n  position: absolute;\n  top: 0;\n  color: white;\n  background-color: rgb(38, 38, 38);\n  right: -100%;\n  width: 100vw;\n  height: 100vh;\n  transition: 0.3s;\n  padding: 50px 20px;\n}\n\n.search {\n  outline: none;\n  border: none;\n  padding: 10px;\n  background-color: rgb(38, 38, 38);\n  border-bottom: 2px white solid;\n  color: white;\n\n}\n\n.searchButton {\n  background-image: url(../assets/icons/magnify.svg);\n  object-fit: cover;\n  width: 30px;\n  height: 30px;\n  border: none;\n  background-color: rgb(38, 38, 38);\n}\n\n.searchButton:hover {\n  cursor: pointer;\n}\n\n.searchContainer {\n  display: flex;\n  align-items: center;\n  width: 100%;\n  justify-content: space-between;\n  margin-top: 20px;\n}\n\n\nnav .icon {\n  filter: invert(99%) sepia(100%) saturate(0%) hue-rotate(254deg) brightness(102%) contrast(105%);\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -118,6 +123,41 @@ module.exports = function (cssWithMappingToString) {
     }
   };
   return list;
+};
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/runtime/getUrl.js":
+/*!********************************************************!*\
+  !*** ./node_modules/css-loader/dist/runtime/getUrl.js ***!
+  \********************************************************/
+/***/ ((module) => {
+
+
+
+module.exports = function (url, options) {
+  if (!options) {
+    options = {};
+  }
+  if (!url) {
+    return url;
+  }
+  url = String(url.__esModule ? url.default : url);
+
+  // If url is already wrapped in quotes, remove them
+  if (/^['"].*['"]$/.test(url)) {
+    url = url.slice(1, -1);
+  }
+  if (options.hash) {
+    url += options.hash;
+  }
+
+  // Should url be wrapped?
+  // See https://drafts.csswg.org/css-values-3/#urls
+  if (/["'() \t\n]|(%20)/.test(url) || options.needQuotes) {
+    return "\"".concat(url.replace(/"/g, '\\"').replace(/\n/g, "\\n"), "\"");
+  }
+  return url;
 };
 
 /***/ }),
@@ -505,6 +545,16 @@ function styleTagTransform(css, styleElement) {
 
 module.exports = styleTagTransform;
 
+/***/ }),
+
+/***/ "./src/assets/icons/magnify.svg":
+/*!**************************************!*\
+  !*** ./src/assets/icons/magnify.svg ***!
+  \**************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "magnify.svg";
+
 /***/ })
 
 /******/ 	});
@@ -533,6 +583,9 @@ module.exports = styleTagTransform;
 /******/ 		return module.exports;
 /******/ 	}
 /******/ 	
+/******/ 	// expose the modules object (__webpack_modules__)
+/******/ 	__webpack_require__.m = __webpack_modules__;
+/******/ 	
 /************************************************************************/
 /******/ 	/* webpack/runtime/compat get default export */
 /******/ 	(() => {
@@ -558,6 +611,18 @@ module.exports = styleTagTransform;
 /******/ 		};
 /******/ 	})();
 /******/ 	
+/******/ 	/* webpack/runtime/global */
+/******/ 	(() => {
+/******/ 		__webpack_require__.g = (function() {
+/******/ 			if (typeof globalThis === 'object') return globalThis;
+/******/ 			try {
+/******/ 				return this || new Function('return this')();
+/******/ 			} catch (e) {
+/******/ 				if (typeof window === 'object') return window;
+/******/ 			}
+/******/ 		})();
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
@@ -572,6 +637,52 @@ module.exports = styleTagTransform;
 /******/ 			}
 /******/ 			Object.defineProperty(exports, '__esModule', { value: true });
 /******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/publicPath */
+/******/ 	(() => {
+/******/ 		var scriptUrl;
+/******/ 		if (__webpack_require__.g.importScripts) scriptUrl = __webpack_require__.g.location + "";
+/******/ 		var document = __webpack_require__.g.document;
+/******/ 		if (!scriptUrl && document) {
+/******/ 			if (document.currentScript)
+/******/ 				scriptUrl = document.currentScript.src
+/******/ 			if (!scriptUrl) {
+/******/ 				var scripts = document.getElementsByTagName("script");
+/******/ 				if(scripts.length) scriptUrl = scripts[scripts.length - 1].src
+/******/ 			}
+/******/ 		}
+/******/ 		// When supporting browsers where an automatic publicPath is not supported you must specify an output.publicPath manually via configuration
+/******/ 		// or pass an empty string ("") and set the __webpack_public_path__ variable from your code to use your own logic.
+/******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
+/******/ 		scriptUrl = scriptUrl.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
+/******/ 		__webpack_require__.p = scriptUrl;
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/jsonp chunk loading */
+/******/ 	(() => {
+/******/ 		__webpack_require__.b = document.baseURI || self.location.href;
+/******/ 		
+/******/ 		// object to store loaded and loading chunks
+/******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
+/******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
+/******/ 		var installedChunks = {
+/******/ 			"main": 0
+/******/ 		};
+/******/ 		
+/******/ 		// no chunk on demand loading
+/******/ 		
+/******/ 		// no prefetching
+/******/ 		
+/******/ 		// no preloaded
+/******/ 		
+/******/ 		// no HMR
+/******/ 		
+/******/ 		// no HMR manifest
+/******/ 		
+/******/ 		// no on chunks loaded
+/******/ 		
+/******/ 		// no jsonp function
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/nonce */
@@ -613,8 +724,24 @@ var eventEmit = function () {
     trigger: trigger
   };
 }();
+function toggleNav() {
+  var nav = document.querySelector("nav");
+  var toggleNavButton = document.querySelector(".toggleNav");
+  if (nav.classList.contains("close")) {
+    nav.style.right = "-100%";
+    toggleNavButton.style.transform = "rotate(0deg)";
+  } else {
+    nav.style.right = "0%";
+    toggleNavButton.style.transform = "rotate(45deg)";
+  }
+  nav.classList.toggle("close");
+}
+eventEmit.subscribe("toggleNav", toggleNav);
+document.querySelector(".toggleNav").addEventListener("click", function () {
+  eventEmit.trigger("toggleNav");
+});
 })();
 
 /******/ })()
 ;
-//# sourceMappingURL=bundle422d447a50dfb313d9d7.js.map
+//# sourceMappingURL=bundle721bc58ff6f9e349239a.js.map

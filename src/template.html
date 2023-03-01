@@ -40,12 +40,14 @@
   </div>
 
   <nav>
-    <input type="search" class="search">
-    <button>Search</button>
+    <div class="searchContainer">
+      <input type="search" class="search" placeholder="search...">
+      <button class="searchButton"></button>
+    </div>
     <div class="savedLocations">
       <div class="rowSavedLocations">
         <h3>Random Place</h3>
-        <img class="icon" src="<%= require('./assets/icons/pollen.svg') %>">
+        <img class="icon" src="<%= require('./assets/icons/delete-empty.svg') %>">
       </div>
     </div>
   </nav>
