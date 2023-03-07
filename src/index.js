@@ -25,12 +25,15 @@ const eventEmit = (() => {
 })();
 
 eventEmit.subscribe("toggleNav", toggleNav);
-eventEmit.subscribe("clickSearch", grabWeather);
+eventEmit.subscribe("weatherGrabbed", toggleNav);
+// eventEmit.subscribe("weatherGrabbed", updateUI);
 
 document.querySelector(".toggleNav").addEventListener("click", () => {
   eventEmit.trigger("toggleNav");
 });
 
 document.querySelector(".searchButton").addEventListener("click", () => {
-  eventEmit.trigger("clickSearch");
+  grabWeather().then(() => {
+    eventEmit.trigger("weatherGrabbed");
+  });
 });

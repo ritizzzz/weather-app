@@ -1,4 +1,4 @@
-function toggleNav() {
+async function toggleNav() {
   const nav = document.querySelector("nav");
   const toggleNavButton = document.querySelector(".toggleNav");
   if (nav.classList.contains("close")) {
