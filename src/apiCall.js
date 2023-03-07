@@ -7,6 +7,7 @@ async function grabWeather() {
   );
   const weather = await response.json();
   console.log(weather);
+  return weather;
 }
 
 export default grabWeather;
