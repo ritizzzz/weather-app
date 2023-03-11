@@ -1,4 +1,6 @@
-async function toggleNav() {
+import { formatTimestamp } from "unixtimezone.js";
+
+function toggleNav() {
   const nav = document.querySelector("nav");
   const toggleNavButton = document.querySelector(".toggleNav");
   if (nav.classList.contains("close")) {
@@ -11,4 +13,10 @@ async function toggleNav() {
   nav.classList.toggle("close");
 }
 
-export { toggleNav };
+function updateUI() {
+  const weather = JSON.parse(
+    localStorage.getItem(localStorage.key(localStorage.length - 1))
+  );
+  console.log(formatTimestamp(weather.time));
+}
+export { toggleNav, updateUI };

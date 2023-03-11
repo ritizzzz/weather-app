@@ -6,29 +6,17 @@ function weatherClass(
   time,
   weather,
   weatherDescription,
-  feelsLike
+  feelsLike,
+  icon
 ) {
-  const _city = city;
-  const _country = country;
-  const _time = time;
-  const _weather = weather;
-  const _weatherDescription = weatherDescription;
-  const _feelsLike = feelsLike;
-
-  const getCity = () => _city;
-  const getCountry = () => _country;
-  const getTime = () => _time;
-  const getWeather = () => _weather;
-  const getWeatherDescription = () => _weatherDescription;
-  const getFeelsLike = () => _feelsLike;
-
   return {
-    getCity,
-    getCountry,
-    getTime,
-    getWeather,
-    getWeatherDescription,
-    getFeelsLike,
+    city,
+    country,
+    time,
+    weather,
+    weatherDescription,
+    feelsLike,
+    icon,
   };
 }
 export default weatherClass;

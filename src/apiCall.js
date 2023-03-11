@@ -1,3 +1,5 @@
+import weatherClass from "./weatherClass";
+
 async function grabWeather() {
   const searchInput = document.querySelector(".search").value;
   const response = await fetch(
@@ -5,9 +7,26 @@ async function grabWeather() {
   `,
     { mode: "cors" }
   );
-  const weather = await response.json();
-  console.log(weather);
-  return weather;
+  const rawWeather = await response.json();
+  if (rawWeather.cod === 200) {
+    const city = rawWeather.name;
+    const iconR = rawWeather.weather[0].icon;
+    const weatherDescription = rawWeather.weather[0].description;
+    const countryR = rawWeather.sys.country;
+    const dateTime = rawWeather.dt + rawWeather.timezone;
+    const weather = rawWeather.main.temp;
+    const feelsLike = rawWeather.main.feels_like;
+    const weatherPack = weatherClass(
+      city,
+      countryR,
+      dateTime,
+      weather,
+      weatherDescription,
+      feelsLike,
+      iconR
+    );
+    localStorage.setItem(dateTime, JSON.stringify(weatherPack));
+  }
 }
 
 export default grabWeather;
