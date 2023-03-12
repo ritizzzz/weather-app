@@ -1,4 +1,5 @@
 import weatherClass from "./weatherClass";
+import { formatTimestamp } from "unixtimezone.js";
 
 async function grabWeather() {
   const searchInput = document.querySelector(".search").value;
@@ -16,6 +17,8 @@ async function grabWeather() {
     const dateTime = rawWeather.dt + rawWeather.timezone;
     const weather = rawWeather.main.temp;
     const feelsLike = rawWeather.main.feels_like;
+    console.log(formatTimestamp(dateTime));
+
     const weatherPack = weatherClass(
       city,
       countryR,
@@ -25,7 +28,17 @@ async function grabWeather() {
       feelsLike,
       iconR
     );
-    localStorage.setItem(dateTime, JSON.stringify(weatherPack));
+
+    if (localStorage.getItem("locationArray")) {
+      const storedLocations = JSON.parse(localStorage.getItem("locationArray"));
+      console.log(storedLocations);
+      storedLocations.push(weatherPack);
+      localStorage.setItem("locationArray", JSON.stringify(storedLocations));
+    } else {
+      const storedLocations = [];
+      storedLocations.push(weatherPack);
+      localStorage.setItem("locationArray", JSON.stringify(storedLocations));
+    }
   }
 }
 

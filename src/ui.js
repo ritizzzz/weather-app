@@ -14,9 +14,7 @@ function toggleNav() {
 }
 
 function updateUI() {
-  const weather = JSON.parse(
-    localStorage.getItem(localStorage.key(localStorage.length - 1))
-  );
-  console.log(formatTimestamp(weather.time));
+  const keys = Object.keys(localStorage).map((key) => Number(key));
+  const weather = JSON.parse(localStorage.getItem(Math.max(...keys)));
 }
 export { toggleNav, updateUI };
