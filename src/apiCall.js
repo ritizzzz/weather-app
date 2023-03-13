@@ -31,7 +31,6 @@ async function grabWeather() {
 
     if (localStorage.getItem("locationArray")) {
       const storedLocations = JSON.parse(localStorage.getItem("locationArray"));
-      console.log(storedLocations);
       storedLocations.push(weatherPack);
       localStorage.setItem("locationArray", JSON.stringify(storedLocations));
     } else {
