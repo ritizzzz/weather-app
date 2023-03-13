@@ -33,7 +33,10 @@ document.querySelector(".toggleNav").addEventListener("click", () => {
 });
 
 document.querySelector(".searchButton").addEventListener("click", () => {
+  document.querySelector(".overlay").style.top = "0px";
+
   grabWeather().then(() => {
     eventEmit.trigger("weatherGrabbed");
+    document.querySelector(".overlay").style.top = "-120%";
   });
 });
