@@ -14,7 +14,19 @@ function toggleNav() {
 }
 
 function updateUI() {
-  const keys = Object.keys(localStorage).map((key) => Number(key));
-  const weather = JSON.parse(localStorage.getItem(Math.max(...keys)));
+  const allWeather = JSON.parse(localStorage.getItem("locationArray"));
+  const cityWeather = allWeather[allWeather.length - 1];
+  document.querySelector(".weatherDescription").innerText =
+    cityWeather.weatherDescription;
+  document.querySelector(
+    ".feelsLike"
+  ).innerText = `feels like ${cityWeather.feelsLike} `;
+  document.querySelector(".temp").innerText = `${cityWeather.weather}°C`;
+  document
+    .querySelector(".weatherIcon")
+    .setAttribute(
+      "src",
+      ` https://openweathermap.org/img/wn/${cityWeather.icon}@2x.png`
+    );
 }
 export { toggleNav, updateUI };

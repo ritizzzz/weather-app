@@ -4,7 +4,7 @@ import { formatTimestamp } from "unixtimezone.js";
 async function grabWeather() {
   const searchInput = document.querySelector(".search").value;
   const response = await fetch(
-    `https://api.openweathermap.org/data/2.5/weather?q=${searchInput}&appid=22baec14a2992148cccf002d980ee161
+    `https://api.openweathermap.org/data/2.5/weather?q=${searchInput}&appid=22baec14a2992148cccf002d980ee161&units=metric
   `,
     { mode: "cors" }
   );
