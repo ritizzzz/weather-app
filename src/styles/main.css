@@ -212,7 +212,7 @@ body {
   display: flex;
   grid-area: 3/1/6/2;
   align-items: center;
-  gap: 10px;
+
 }
 
 .rightWeatherInfo {
@@ -242,11 +242,7 @@ body {
   align-self: flex-end;
 }
 
-.leftWeatherInfo>.icon {
-  width: 60px;
-  filter: invert(99%) sepia(100%) saturate(0%) hue-rotate(254deg) brightness(102%) contrast(105%);
-  height: 60px;
-}
+
 
 
 

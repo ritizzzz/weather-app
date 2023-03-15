@@ -1,3 +1,4 @@
+import { format } from "date-fns";
 import { formatTimestamp } from "unixtimezone.js";
 
 function toggleNav() {
@@ -28,5 +29,15 @@ function updateUI() {
       "src",
       ` https://openweathermap.org/img/wn/${cityWeather.icon}@2x.png`
     );
+  document.querySelector(".city").innerText = cityWeather.city;
+
+  const dateString = formatTimestamp(cityWeather.time).split(" ")[0].split("-");
+  const dateDate = new Date(
+    Number(dateString[0]),
+    Number(dateString[1] - 1),
+    Number(dateString[2])
+  );
+
+  document.querySelector(".date").innerText = format(dateDate, "cccc do MMMM");
 }
 export { toggleNav, updateUI };

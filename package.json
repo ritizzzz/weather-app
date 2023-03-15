@@ -34,6 +34,7 @@
     "webpack-dev-server": "^4.11.1"
   },
   "dependencies": {
+    "date-fns": "^2.29.3",
     "unixtimezone.js": "^1.1.4"
   }
 }
