@@ -14,9 +14,8 @@ function toggleNav() {
   nav.classList.toggle("close");
 }
 
-function updateUI() {
-  const allWeather = JSON.parse(localStorage.getItem("locationArray"));
-  const cityWeather = allWeather[allWeather.length - 1];
+function updateUI(weatherArray) {
+  const cityWeather = weatherArray[weatherArray.length - 1];
   document.querySelector(".weatherDescription").innerText =
     cityWeather.weatherDescription;
   document.querySelector(
@@ -37,7 +36,23 @@ function updateUI() {
     Number(dateString[1] - 1),
     Number(dateString[2])
   );
-
   document.querySelector(".date").innerText = format(dateDate, "cccc do MMMM");
+
+  for (let i = 0; i < weatherArray.length; i += 1) {
+    const weatherLoop = weatherArray[i];
+
+    const rowSavedLocations = document.createElement("div");
+    rowSavedLocations.setAttribute("class", "rowSavedLocations");
+    const locationName = document.createElement("h3");
+    locationName.innerText = weatherLoop.city;
+    rowSavedLocations.appendChild(locationName);
+    const icon = document.createElement("img");
+    icon.setAttribute("class", "icon");
+    icon.setAttribute("src", "delete-empty.svg");
+    rowSavedLocations.appendChild(icon);
+    rowSavedLocations.setAttribute("id", cityWeather.id);
+    document.querySelector(".savedLocations").appendChild(rowSavedLocations);
+  }
 }
+
 export { toggleNav, updateUI };

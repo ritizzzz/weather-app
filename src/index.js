@@ -35,8 +35,14 @@ document.querySelector(".toggleNav").addEventListener("click", () => {
 document.querySelector(".searchButton").addEventListener("click", () => {
   document.querySelector(".overlay").style.top = "0px";
 
-  grabWeather().then(() => {
-    eventEmit.trigger("weatherGrabbed");
-    document.querySelector(".overlay").style.top = "-120%";
-  });
+  grabWeather()
+    .then(() => {
+      const allWeather = JSON.parse(localStorage.getItem("locationArray"));
+      eventEmit.trigger("weatherGrabbed", [allWeather[allWeather.length - 1]]);
+      document.querySelector(".overlay").style.top = "-120%";
+    })
+    .catch((err) => {
+      console.log(err);
+      document.querySelector(".overlay").style.top = "-120%";
+    });
 });

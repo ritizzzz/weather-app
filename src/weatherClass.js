@@ -1,6 +1,7 @@
 /* eslint-disable no-underscore-dangle */
 
 function weatherClass(
+  id,
   city,
   country,
   time,
@@ -10,6 +11,7 @@ function weatherClass(
   icon
 ) {
   return {
+    id,
     city,
     country,
     time,

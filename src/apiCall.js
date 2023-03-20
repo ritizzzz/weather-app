@@ -9,7 +9,9 @@ async function grabWeather() {
     { mode: "cors" }
   );
   const rawWeather = await response.json();
+  console.log(rawWeather);
   if (rawWeather.cod === 200) {
+    const idR = rawWeather.id;
     const city = rawWeather.name;
     const iconR = rawWeather.weather[0].icon;
     const weatherDescription = rawWeather.weather[0].description;
@@ -20,6 +22,7 @@ async function grabWeather() {
     console.log(formatTimestamp(dateTime));
 
     const weatherPack = weatherClass(
+      idR,
       city,
       countryR,
       dateTime,
@@ -38,6 +41,10 @@ async function grabWeather() {
       storedLocations.push(weatherPack);
       localStorage.setItem("locationArray", JSON.stringify(storedLocations));
     }
+  } else {
+    return Promise.reject(
+      new Error(`${rawWeather.cod}. ${rawWeather.message}`)
+    );
   }
 }
 
