@@ -1,6 +1,6 @@
 import grabWeather from "./apiCall";
 import "./styles/main.css";
-import { toggleNav, updateUI } from "./ui";
+import { toggleNav, updateNav, updateUI } from "./ui";
 
 const eventEmit = (() => {
   const events = {};
@@ -27,6 +27,7 @@ const eventEmit = (() => {
 eventEmit.subscribe("toggleNav", toggleNav);
 eventEmit.subscribe("weatherGrabbed", toggleNav);
 eventEmit.subscribe("weatherGrabbed", updateUI);
+eventEmit.subscribe("weatherGrabbed", updateNav);
 
 document.querySelector(".toggleNav").addEventListener("click", () => {
   eventEmit.trigger("toggleNav");

@@ -37,7 +37,9 @@ function updateUI(weatherArray) {
     Number(dateString[2])
   );
   document.querySelector(".date").innerText = format(dateDate, "cccc do MMMM");
+}
 
+function updateNav(weatherArray) {
   for (let i = 0; i < weatherArray.length; i += 1) {
     const weatherLoop = weatherArray[i];
 
@@ -50,9 +52,9 @@ function updateUI(weatherArray) {
     icon.setAttribute("class", "icon");
     icon.setAttribute("src", "delete-empty.svg");
     rowSavedLocations.appendChild(icon);
-    rowSavedLocations.setAttribute("id", cityWeather.id);
+    rowSavedLocations.setAttribute("id", weatherLoop.id);
     document.querySelector(".savedLocations").appendChild(rowSavedLocations);
   }
 }
 
-export { toggleNav, updateUI };
+export { toggleNav, updateUI, updateNav };

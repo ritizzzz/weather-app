@@ -1,5 +1,4 @@
 import weatherClass from "./weatherClass";
-import { formatTimestamp } from "unixtimezone.js";
 
 async function grabWeather() {
   const searchInput = document.querySelector(".search").value;
@@ -19,7 +18,6 @@ async function grabWeather() {
     const dateTime = rawWeather.dt + rawWeather.timezone;
     const weather = rawWeather.main.temp;
     const feelsLike = rawWeather.main.feels_like;
-    console.log(formatTimestamp(dateTime));
 
     const weatherPack = weatherClass(
       idR,
@@ -46,6 +44,8 @@ async function grabWeather() {
       new Error(`${rawWeather.cod}. ${rawWeather.message}`)
     );
   }
+
+  return Promise.resolve();
 }
 
 export default grabWeather;
