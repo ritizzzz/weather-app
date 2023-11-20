@@ -8,7 +8,6 @@ async function grabWeather() {
     { mode: "cors" }
   );
   const rawWeather = await response.json();
-  console.log(rawWeather);
   if (rawWeather.cod === 200) {
     const idR = rawWeather.id;
     const city = rawWeather.name;
@@ -47,5 +46,7 @@ async function grabWeather() {
 
   return Promise.resolve();
 }
+// set another local storage item that sets the order of which the different cities are displays that way, there will be no need for a new api call
+// we can use the grab weather function with an optional parameter
 
 export default grabWeather;
