@@ -28,25 +28,9 @@ async function grabWeather() {
       feelsLike,
       iconR
     );
-
-    if (localStorage.getItem("locationArray")) {
-      const storedLocations = JSON.parse(localStorage.getItem("locationArray"));
-      storedLocations.push(weatherPack);
-      localStorage.setItem("locationArray", JSON.stringify(storedLocations));
-    } else {
-      const storedLocations = [];
-      storedLocations.push(weatherPack);
-      localStorage.setItem("locationArray", JSON.stringify(storedLocations));
-    }
-  } else {
-    return Promise.reject(
-      new Error(`${rawWeather.cod}. ${rawWeather.message}`)
-    );
+    return Promise.resolve(weatherPack);
   }
-
-  return Promise.resolve();
+  return Promise.reject(new Error(`${rawWeather.cod}. ${rawWeather.message}`));
 }
-// set another local storage item that sets the order of which the different cities are displays that way, there will be no need for a new api call
-// we can use the grab weather function with an optional parameter
 
 export default grabWeather;

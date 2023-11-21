@@ -14,8 +14,8 @@ function toggleNav() {
   nav.classList.toggle("close");
 }
 
-function updateUI(weatherArray) {
-  const cityWeather = weatherArray[weatherArray.length - 1];
+function updateUI(weather) {
+  const cityWeather = weather;
   document.querySelector(".weatherDescription").innerText =
     cityWeather.weatherDescription;
   document.querySelector(
@@ -40,20 +40,25 @@ function updateUI(weatherArray) {
 }
 
 function updateNav(weatherArray) {
-  for (let i = 0; i < weatherArray.length; i += 1) {
-    const weatherLoop = weatherArray[i];
+  if (weatherArray != null) {
+    // delete all navigation rows
+    document.querySelector(".savedLocations").innerText = "";
+    // populate it back with the new changes
+    for (let i = 0; i < weatherArray.length; i += 1) {
+      const weatherLoop = weatherArray[i];
 
-    const rowSavedLocations = document.createElement("div");
-    rowSavedLocations.setAttribute("class", "rowSavedLocations");
-    const locationName = document.createElement("h3");
-    locationName.innerText = weatherLoop.city;
-    rowSavedLocations.appendChild(locationName);
-    const icon = document.createElement("img");
-    icon.setAttribute("class", "icon");
-    icon.setAttribute("src", "delete-empty.svg");
-    rowSavedLocations.appendChild(icon);
-    rowSavedLocations.setAttribute("id", weatherLoop.id);
-    document.querySelector(".savedLocations").appendChild(rowSavedLocations);
+      const rowSavedLocations = document.createElement("div");
+      rowSavedLocations.setAttribute("class", "rowSavedLocations");
+      const locationName = document.createElement("h3");
+      locationName.innerText = weatherLoop.city;
+      rowSavedLocations.appendChild(locationName);
+      const icon = document.createElement("img");
+      icon.setAttribute("class", "icon");
+      icon.setAttribute("src", "delete-empty.svg");
+      rowSavedLocations.appendChild(icon);
+      rowSavedLocations.setAttribute("id", weatherLoop.id);
+      document.querySelector(".savedLocations").appendChild(rowSavedLocations);
+    }
   }
 }
 

@@ -1,10 +1,13 @@
 function listenerToNavRow(allWeather) {
-  for (let i = 0; i < allWeather.length; i += 1) {
-    console.log(allWeather);
-    document.getElementById(allWeather[i].id).addEventListener("click", () => {
-      console.log(" work");
-    });
+  if (allWeather != null) {
+    for (let i = 0; i < allWeather.length; i += 1) {
+      document
+        .getElementById(allWeather[i].id)
+        .addEventListener("click", () => {
+          console.log(" work");
+        });
+    }
   }
 }
 
-export default listenerToNavRow;
+export { listenerToNavRow };
