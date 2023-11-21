@@ -44,4 +44,15 @@ function storeLocation(location) {
     localStorage.setItem("orderArray", JSON.stringify(orderArray));
   }
 }
-export { storeLocation };
+
+function deleteLocation(locationId) {
+  const locations = JSON.parse(localStorage.getItem("locationArray"));
+  for (let i = 0; i < locations.length; i += 1) {
+    if (parseFloat(locationId) === locations[i].id) {
+      locations.splice(i, 1);
+    }
+  }
+  localStorage.setItem("locationArray", JSON.stringify(locations));
+}
+
+export { storeLocation, deleteLocation };

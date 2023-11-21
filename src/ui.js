@@ -55,6 +55,7 @@ function updateNav(weatherArray) {
       const icon = document.createElement("img");
       icon.setAttribute("class", "icon");
       icon.setAttribute("src", "delete-empty.svg");
+      icon.style.zIndex = "1";
       rowSavedLocations.appendChild(icon);
       rowSavedLocations.setAttribute("id", weatherLoop.id);
       document.querySelector(".savedLocations").appendChild(rowSavedLocations);
